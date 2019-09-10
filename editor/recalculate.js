@@ -725,7 +725,8 @@ export const recalculateDimensions = function (selected) {
         }
         // Fallthrough
       case 'path':
-        changes.d = selected.getAttribute('d');
+        if (selected.tagName != 'line')
+          changes.d = selected.getAttribute('d');
         operation = 1;
         tlist.clear();
         break;
