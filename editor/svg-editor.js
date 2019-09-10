@@ -330,7 +330,7 @@ let svgCanvas, urldata,
  *   loading fails and `noAlert` is truthy.
  */
 async function loadSvgString (str, {noAlert} = {}) {
-  const success = svgCanvas.setSvgString(str) !== false;
+  const success = !str || str == "" || svgCanvas.setSvgString(str) !== false;
   if (success) {
     return;
   }
