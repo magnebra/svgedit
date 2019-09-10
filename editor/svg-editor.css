@@ -1383,6 +1383,7 @@ ul li.current {
 
 /* Generic context menu styles */
 .contextMenu {
+  width: 270px;
   position: absolute;
   z-index: 99999;
   border: solid 1px rgba(0,0,0,.33);
@@ -1400,6 +1401,7 @@ ul li.current {
 
 .contextMenu LI {
   list-style: none;
+  list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
   padding: 0px;
   margin: 0px;
 }
@@ -1408,6 +1410,7 @@ ul li.current {
   width: 115px;
   text-align:right;
   float:right;
+  display: inline;
 }
 
 .contextMenu A {
